@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border-bottom: solid red 2px;
+  gap: 10px;
+}
+
+.button {
+  background: limegreen;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  color: limegreen;
+  padding: 10px 20px;
+  border-top: lightgray 0.1rem solid;
+  border-bottom: lightgray 0.1px solid;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  color: limegreen;
+  padding: 10px 20px;
+  border-bottom: lightgray 0.1rem solid;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  color: slategray;
+  border: lightgray 0.1rem solid;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline: none;
+  border: limegreen 0.2rem solid;
+}

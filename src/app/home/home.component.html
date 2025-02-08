@@ -1,1 +1,15 @@
-<p>home works!</p>
+<div class="container">
+  <span style="font-size: 2.5rem">Stewy</span>
+  <div class="navbar-items">
+    <a [routerLink]="item.link" *ngFor="let item of filteredNavbarItems" routerLinkActive="active-link">
+      {{ item.label }}
+    </a>
+  </div>
+  <div style="padding-top: 15px">
+    {{selectedUser | json}}
+  </div>
+  <div class="login">
+    <app-select [options]="users" (valueChange)="selecteerGebruiker($event)"></app-select>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div style="margin-left: auto">
+    <button class="button">Toevoegen vrijwilliger</button>
+  </div>
+  <div style="min-height: 50px;display: flex;justify-content: flex-end">
+    <input class="input" [placeholder]="'Zoek op naam of voornaam'">
+  </div>
+  <div>
+    <div class="headers">
+      <div class="header">Voornaam</div>
+      <div class="header">Achternaam</div>
+      <div class="header">KBVB</div>
+      <div class="header">Laats ingelogd</div>
+      <div class="header">Positie</div>
+      <div class="header">Club</div>
+      <div class="header">Acties</div>
+    </div>
+    <div *ngFor="let row of vrijwilligers" class="row">
+      <div class="cell">{{ row.voornaam }}</div>
+      <div class="cell">{{ row.achternaam }}</div>
+      <div class="cell">{{ row.kbvbId }}</div>
+      <div class="cell">{{ row.lastLogin }}</div>
+      <div class="cell">{{ row.positie }}</div>
+      <div class="cell">{{ row.club }}</div>
+      <div class="cell">
+        <button class="">Bewerken</button>
+        <button class="">Verwijderen</button>
+      </div>
+    </div>
+  </div>
+</div>

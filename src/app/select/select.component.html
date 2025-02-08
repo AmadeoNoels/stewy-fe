@@ -1,0 +1,7 @@
+<div class="container">
+  <select [value]="value" (change)="onSelectChange($event)">
+    <option class="option" *ngIf="!value">{{ placeholder }}</option>
+    <option *ngFor="let item of options" [value]="item.value">{{ item.label }}</option>
+  </select>
+</div>
+
